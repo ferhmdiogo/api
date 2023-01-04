@@ -1,2 +1,4 @@
-package med.vol.api.model;public class MedicoModel {
+package med.vol.api.model;
+
+public class MedicoModel {
 }
