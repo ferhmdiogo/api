@@ -31,6 +31,8 @@ public class MedicoModel {
     @Embedded
     private Endereco endereco;
 
+    private Boolean ativo;
+
     public MedicoModel(MedicoDto dados) {
         this.nome = dados.nome();
         this.email = dados.email();
@@ -51,5 +53,9 @@ public class MedicoModel {
             this.endereco.atualizarInformacoes(dados.endereco());
         }
 
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 }
